@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t; cin>>t; string a = "",b = "";
+ 
+ 
+    int counta = 0,countb = 0;
+    while(t--){
+ 
+    string team;
+    cin>>team;
+ 
+ 
+ 
+    if(a == "" || team == a){
+        a = team; counta++;
+    }
+ 
+    else if(b == ""|| b == team){
+            b = team;
+            countb++;
+    }
+    }
+ 
+    if(counta > countb) cout<< a <<endl;
+ 
+    else cout << b << endl;
+ 
+    return 0;
+}
+ 
