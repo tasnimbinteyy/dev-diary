@@ -1,0 +1,14 @@
+#include<iostream>
+#include<bitset>
+ 
+using namespace std;
+ 
+int main(){
+ 
+   int x; cin>>x;
+ 
+   bitset<32>n(x);
+ 
+   cout<<n.count()<<endl;
+   return 0;
+}
