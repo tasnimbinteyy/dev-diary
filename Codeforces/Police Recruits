@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n; cin>>n;
+
+     int free_officers = 0,crime = 0;
+    while(n--){
+        int s; cin>>s;
+             if(s == -1 ){
+                if(free_officers > 0){
+                    free_officers--;
+                }
+
+                else crime++;
+             }
+
+             else free_officers += s;
+    }
+       cout<<crime<<endl;
+
+    return 0;
+}
