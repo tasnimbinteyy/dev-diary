@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+
+   string s;
+   cin>>s;
+
+   if(s.length() == 1) cout<<s<<endl;
+
+   else {
+     for(int i = 0; i<s.length();i++){
+
+        int digit = s[i] - '0';
+        int r = 9 - digit;
+
+    if(r<digit){
+            if( i == 0 && r == 0) continue;
+        s[i] = r + '0';
+    }
+   }
+
+   cout<<s<<endl;
+   }
+
+}
+
